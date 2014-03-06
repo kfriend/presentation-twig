@@ -17,7 +17,7 @@ if (is_file(__DIR__."/templates/{$route}.twig"))
 		: [];
 
 	// Parse template and return
-	echo $twig->render($route.'.twig', $context);
+	echo $twig->render($route.'.twig', (array) $context);
 	exit;
 }
 
