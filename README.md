@@ -1,5 +1,5 @@
 # Setup
-1. [Install composer][https://getcomposer.org/download/]
+1. [Install composer](https://getcomposer.org/download/)
 2. git clone https://github.com/kwoodfriend/presentation-twig.git twig
 3. cd twig
 4. composer install
