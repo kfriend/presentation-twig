@@ -1,0 +1,51 @@
+{% extends 'layout.twig' %}
+
+{% block title %}
+    Inline block and whitespace!
+{% endblock %}
+
+{% block css_head %}
+    <style>
+        ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        li
+        {
+            display: inline-block;
+            border: 4px solid blue;
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+{% endblock %}
+
+{% block primary_content %}
+    <ul>
+        <li><img src="http://placehold.it/100x100" /></li>
+        <li><img src="http://placehold.it/100x100" /></li>
+        <li><img src="http://placehold.it/100x100" /></li>
+        <li><img src="http://placehold.it/100x100" /></li>
+    </ul>
+{% endblock %}
+
+
+
+
+
+
+{#
+{% block primary_content %}
+    {% spaceless %}
+        <ul>
+            <li><img src="http://placehold.it/100x100" /></li>
+            <li><img src="http://placehold.it/100x100" /></li>
+            <li><img src="http://placehold.it/100x100" /></li>
+            <li><img src="http://placehold.it/100x100" /></li>
+        </ul>
+    {% endspaceless %}
+{% endblock %} #}
