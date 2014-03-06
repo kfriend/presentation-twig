@@ -1,0 +1,26 @@
+<h1>{{ title }}</h1>
+<ul>
+	<li>
+		<a href="{{ menu.home.url }}">
+			{{ menu.home.title }}
+		</a>
+	</li>
+	<li>
+		<a href="{{ menu.about.url }}">
+			{{ menu.about.title }}
+		</a>
+	</li>
+</ul>
+<article>
+	<header>
+		<h1>{{ article.title }}</h1>
+	</header>
+	<section>
+		<p>
+			{{ article.body }}
+		</p>
+	</section>
+	<footer>
+		Published: {{ article.date }}
+	</footer>
+</article>

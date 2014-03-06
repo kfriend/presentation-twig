@@ -8,10 +8,15 @@ class Article
 	{
 		return '3/6/2014';
 	}
+
+	public function body()
+	{
+		return 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod';
+	}
 }
 
 return [
-	'title' => 'Example Twig Templates!!!',
+	'title' => 'Example Page',
 	'menu' => [
 		'home' => [
 			'title' => 'Home',
