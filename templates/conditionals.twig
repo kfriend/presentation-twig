@@ -1,0 +1,29 @@
+<p>
+	{% if time > 6 and time < 8 %}
+		Currently presenting on Twig.
+	{% elseif time > 8 %}
+		You should be done presenting.
+	{% elseif time < 6 %}
+		Not presenting yet. Scramble to get ready!
+	{% endif %}
+</p>
+
+<p>
+	{% if doesnt_exist %}
+		doesnt_exist exists when it shouldn't!
+	{% endif %}
+</p>
+
+<p>
+	{% set im_false = false %}
+
+	{% if im_false is empty %}
+		im_false is empty!
+	{% endif %}
+</p>
+
+<p>
+	{{ doesnt_exist ? 'This variable exsits, but it shouldnt!' : "That's more like it!" }}
+</p>
+
+
