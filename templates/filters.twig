@@ -1,0 +1,21 @@
+<p>
+    {{ copy|trim|lower|nl2br }}
+</p>
+
+<p>
+    {% for word in copy|trim|split(' ') %}
+        * {{ word }}<br />
+    {% endfor %}
+</p>
+
+<p>
+    {% filter trim|striptags|upper|replace('*', '@') %}
+        {% for word in copy|trim|split(' ') %}
+            * {{ word }}<br />
+        {% endfor %}
+    {% endfilter %}
+</p>
+
+<p>
+    Billy said: {{ input|escape }}
+</p>
