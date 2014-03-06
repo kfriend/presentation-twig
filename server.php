@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/New_York');
+
 // Parse request URI
 $route = parse_url(substr($_SERVER['REQUEST_URI'], 1))['path'];
 
