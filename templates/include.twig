@@ -1,0 +1,11 @@
+<h1>Simple include example</h1>
+<p>
+    {% include 'include_simple.twig' %}
+</p>
+
+<h2>Reusing with include</h2>
+<ul>
+    {% for language in languages %}
+        {% include 'include_item.twig' with language %}
+    {% endfor %}
+</ul>
