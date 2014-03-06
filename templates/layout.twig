@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %} - Seacoast Drupal User Group {% endblock %}
+        </title>
+        {% block meta %}{% endblock %}
+        {% block head_css %}{% endblock %}
+    </head>
+    <body class="{% block body_class %}{% endblock %}">
+        <header>
+            <hgroup>
+                <h1>
+                    Kevin's awesome Twig extends
+                </h1>
+                <h2>
+                    And a clever tag line
+                </h2>
+            </hgroup>
+        </header>
+        <div class="content">
+            <div class="primary-content">
+                {% block primary_content %}
+                    This is the default content that will be displayed
+                {% endblock %}
+            </div>
+            {% if block('secondary_content') is not empty %}
+                <aside class="secondary-content">
+                    {% block secondary_content %}{% endblock %}
+                </aside>
+            {% endif %}
+        </div>
+    </body>
+</html>
